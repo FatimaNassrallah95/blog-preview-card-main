@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    /* Primary colors */
+    --Yellow: hsl(47, 88%, 63%);
+    
+    /* neutral colors */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    /* Fonts */
+    --ff-primary: "Figtree";
+    --fw-medium: 600;
+    --fw-bold: 800;
+
+}
+
+body {
+    background-color: var(--Yellow);
+    font-size: 16px;
+    font-family: var(--ff-primary);
+    width:100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: var(--White);
+    width: 25%;
+    height: 70%;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 5px 5px;
+    padding: 25px;
+    border: 1px solid var(--Black);
+}
+
+.main-image{
+    border-radius: 10px;
+}
+
+h2{
+    font-weight: var(--fw-bold);
+    font-size: 15px;
+    background: var(--Yellow);
+    padding: 5px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+h4{
+    font-weight: var(--fw-medium);
+    font-size: 13px;
+}
+
+h1{
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+}
+
+h6{
+    font-weight: var(--fw-medium);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--Grey);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer p{
+    font-weight: var(--fw-bold);
+}
